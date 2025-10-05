@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            padding: 15px;
+            margin-top: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 5px 5px 10px gray;
+            background-color: rgb(221, 221, 221);
+            border-radius: 10px;
+        }
+
+        .left {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right {
+            margin: 10px 10px 10px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .photo img {
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+            max-width: 180px;
+            width: 100%;
+            height: auto;
+        }
+
+        .name {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .description {
+            color: rgb(97, 97, 97);
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .b1,
+        .b2 {
+            border-radius: 8%;
+            margin: 10px;
+            background-color: rgb(55, 55, 168);
+            width: 150px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .button {
+                flex-direction: column;
+            }
+
+            .b1,
+            .b2 {
+                width: 90%;
+                margin: 10px auto;
+            }
+
+            .photo img {
+                max-width: 120px;
+            }
+
+            .description {
+                text-align: center;
+                margin: 10px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left">
+                <div class="photo">
+                    <img src="2.PNG" alt="Profile Photo">
+                </div>
+                <div class="name">
+                    <h2>Vashu Sharma</h2>
+                </div>
+            </div>
+            <div class="right">
+                <div class="description">
+                    <p>Web Designer & JavaScript Enthusiast. Loves clean and creative layouts.</p>
+                </div>
+                <div class="button">
+                    <span class="b1">Contact</span>
+                    <span class="b2">Portfolio</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

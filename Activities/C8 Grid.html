@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container {
+            border: solid, 5px, rgb(243, 189, 124);
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            height: 1000px;
+            width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: white;
+            text-align: center;
+            align-content: center;
+            border: 5px, solid, aquamarine;
+        }
+
+        .box1 {
+            background-color: white;
+            border: 5px, solid, purple;
+            grid-column: 1/4;
+            grid-row: 1;
+        }
+
+        .box2 {
+            background-color: white;
+            border: 5px, solid, green;
+            grid-column: 1;
+            grid-row: 2/4;
+        }
+
+        .box3 {
+            background-color: white;
+            border: 5px, solid, blue;
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .box4 {
+            background-color: white;
+            border: 5px, solid, blue;
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        .box5 {
+            background-color: white;
+            border: 5px, solid, black;
+            grid-column: 3;
+            grid-row: 2/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+</body>
+
+</html>
